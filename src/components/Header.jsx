@@ -12,7 +12,7 @@ function Header() {
 
    <ul className='page'>
     <li ><Link to="/">Home</Link></li>
-    <li><Link to="/">About</Link></li>
+    <li><Link to="/about">About</Link></li>
    </ul>
    </div>
   )
