@@ -1,7 +1,21 @@
 *{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
+
+body{
+    background-color: #F0F2F8;
+}
+
+.container{
+max-width: 80%;
+margin: auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
 
 .nav{
 
@@ -41,7 +55,7 @@
 
 .page li a:hover{
     background-color: #946EF0;
-    
+   
 }
 
 .foot{
@@ -53,3 +67,96 @@
     bottom: 0;
     width: 100%;
 }
+
+.directory h4{
+margin-top: 20px;
+
+}
+
+.directory p{
+color: grey;
+
+}
+
+
+.card{
+    margin-top:20px ;
+    border: 2px solid black;
+    width: 250px;
+    padding: 10px;
+
+}
+
+#entrolled{
+    color: green;
+    font-weight: bolder;
+    background-color: rgb(145, 205, 175);
+    display:inline;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+
+}
+#name{
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#age,#course,#number{
+    color: gray;
+    padding:5px;
+    
+}
+
+.button{
+background-color: rgb(79, 63, 199);
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.search{
+    padding: 8px 12px;
+    border: 1px solid#ccc;
+    border-radius: 4px;
+    width: 250px;
+    width: 70%;
+}
+
+.bt-group{
+    display: flex;
+    gap: 10px;
+}
+
+.bt-group button{
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.bt-group button:hover{
+    background-color: rgb(62, 13, 225);
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+row-gap: 10px;
+}
+
+
