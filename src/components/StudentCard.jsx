@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 function StudentCard(props) {
   let StudentData = props.students;
-  console.log(StudentData);
+  
+
+
+
+
+
+
 
   return (
     <>
@@ -19,7 +25,14 @@ function StudentCard(props) {
                 <p id="age">Age : {obj.age}</p>
                 <p id="course"> Course : {obj.course}</p>
                 <p id="number">Student ID : #{obj.id}</p>
-                <button className="button">Select</button>
+                
+                <button className="button" onClick={()=>{
+
+              
+
+
+                }}>
+                  Selected</button>
               </div>
             </li>
           );

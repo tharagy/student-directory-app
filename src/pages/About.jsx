@@ -2,7 +2,14 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About</div>
+    <>
+    <header className="about">
+       <h1> About Directory</h1>
+       <p>Empowering student managementwith modern tools</p>
+       
+       </header>
+       <div></div>
+</>
   )
 }
 

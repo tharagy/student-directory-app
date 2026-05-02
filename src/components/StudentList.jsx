@@ -1,13 +1,19 @@
 import React from 'react'
+import StudentCard from './StudentCard'
 
 
 function StudentList(props){
     
-    console.log(props.students)
+   
 
 
   return (
-    <div>StudentList</div>
+   <>
+   
+   <StudentCard students={props.students}/>
+   
+   
+   </>
   )
 }
 

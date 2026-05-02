@@ -1,9 +1,12 @@
+import { useEffect } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import StudentCard from "./components/StudentCard";
 import StudentList from "./components/StudentList";
 import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./pages/About";
 
 function App() {
   const students = [
@@ -56,19 +59,22 @@ function App() {
     },
   ];
 
+  useEffect(() => {
+    console.log("Students Directory Loaded");
+    document.title = `${students.length} Students | Directory`;
+  }, []);
   return (
     <>
-      <Header />
-      <div className="container">
-        {/* <StudentList students={students}/> */}
-
-        <Home />
-       
-        <StudentCard students={students} />
-      </div>
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home students={students} />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </>
-  );
+  )
 }
 
 export default App;

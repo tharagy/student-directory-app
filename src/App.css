@@ -11,8 +11,9 @@ body{
 .container{
 max-width: 80%;
 margin: auto;
-padding-left: 10px;
+padding-left:10px;
 padding-right: 10px;
+
 }
 
 
@@ -82,11 +83,13 @@ color: grey;
 .card{
     margin-top:20px ;
     width: 250px;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: #212134;
-
+    box-shadow:0 4px 20px #7d7d98;
+}
+.card:hover{
+    transform: translate(-5px);
 }
 
 #entrolled{
