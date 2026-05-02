@@ -11,7 +11,10 @@ function StudentCard(props) {
           return (
             <li key ={index} style={{listStyle:"none"}}>
               <div className="card">
-                <p id="entrolled">✅Entrolled</p>
+
+           {obj.isActive?<p id="entrolled">✅Entrolled</p>:
+                <p id="alumni">🎓 Alumni</p>
+           }
                 <p id="name">{obj.name}</p>
                 <p id="age">Age : {obj.age}</p>
                 <p id="course"> Course : {obj.course}</p>
