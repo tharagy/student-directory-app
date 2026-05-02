@@ -1,14 +1,43 @@
-
-import './App.css'
+import "./App.css";
+import StudentCard from "./components/StudentCard";
+import StudentList from "./components/StudentList";
 
 function App() {
- 
+  const students = [
+    { id: 1,
+      name: "Thara",
+      age: 20, 
+      course: "IT",
+      isActive: true },
+      { id: 2,
+      name: "Lia",
+      age: 21, 
+      course: "Business",
+      isActive: true },
+      { id: 3,
+      name: "Maya",
+      age: 22, 
+      course: "Engineering",
+      isActive: true },
+      { id: 4,
+      name: "Alex",
+      age: 22, 
+      course: "IT",
+      isActive: false },
+      { id: 5,
+      name: "Alia",
+      age: 21, 
+      course: "Business",
+      isActive: true },
+  ];
 
   return (
     <>
-    <h1>Student Directory App</h1>
+     <StudentCard students={students}/>
+     <StudentList students={students}/>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;
