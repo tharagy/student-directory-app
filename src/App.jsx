@@ -1,4 +1,6 @@
 import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import StudentCard from "./components/StudentCard";
 import StudentList from "./components/StudentList";
 
@@ -33,9 +35,10 @@ function App() {
 
   return (
     <>
-     <StudentCard students={students}/>
-     <StudentList students={students}/>
-
+     {/* <StudentCard students={students}/>
+     <StudentList students={students}/> */}
+<Header />
+<Footer/>
     </>
   );
 }
